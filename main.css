@@ -200,9 +200,9 @@ header .header-content h1 {
   position: fixed;
   bottom: -100%;
   left: 50%;
-  width: 1480px;
+  width: 1360px;
   height: 70%;
-  margin-left: -740px;
+  margin-left: -680px;
   background: rgba(255,255,255,0.8);
   border-radius: 5px 5px 0 0;
     border: 1px solid #BBB;
@@ -210,7 +210,7 @@ header .header-content h1 {
 
 .close {
   position: absolute;
-  right: 30px;
+  right: 20px;
   top: 20px;
   width: 100px;
   height: 100px;
