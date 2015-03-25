@@ -193,3 +193,45 @@ header .header-content h1 {
   transform: rotate(720deg);
   -webkit-transform: rotate(720deg);
 }
+
+.personal-area {
+  position: fixed;
+  bottom: -100%;
+  left: 50%;
+  width: 1480px;
+  height: 70%;
+  margin-left: -740px;
+  background: rgba(255,255,255,0.8);
+  border-radius: 5px 5px 0 0;
+    border: 1px solid #BBB;
+}
+
+.close {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  width: 100px;
+  height: 100px;
+  background: #FF8484;
+  border-radius: 50%;
+  border: 1px solid rgba(203, 203, 203, 0.41);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+}
+
+.close i {
+  font-size: 500%;
+  top: 12px;
+  position: relative;
+  left: 22px;
+  color: #FFF;
+  -webkit-transition: all .5s ease;
+     -moz-transition: all .5s ease;
+      -ms-transition: all .5s ease;
+       -o-transition: all .5s ease;
+          transition: all .5s ease;
+}
+.close i:hover {
+  transform: rotate(720deg);
+  -webkit-transform: rotate(720deg);
+}

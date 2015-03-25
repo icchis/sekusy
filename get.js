@@ -57,7 +57,21 @@ $(document).ready(function(){
   });
 
   $(document).on('click', '#personal', function () {
+    $(".personal-area").animate(
+        {
+            bottom: "0%"
+        },
+        "slow", "easeInQuart"
+    );
+  });
 
+  $(document).on('click', '.close', function () {
+    $(".personal-area").animate(
+        {
+            bottom: "-70%"
+        },
+        "slow", "easeInQuart"
+    );
   });
 
 });
