@@ -1,6 +1,6 @@
 
 // 初期設定
-var disp_entry_count = 50;
+var disp_entry_count = 60;
 
 // RSS URL
 var site = new Array();
@@ -40,6 +40,13 @@ site[5] = {
     url:'http://erotube.org/atom.xml',
     disp_entry:15
 };
+
+site[6] = {
+    title:'ero oppai 無料動画',
+    url:'http://ero-oppai.com/feed/',
+    disp_entry:15
+};
+
 
 var channel = new Array();
 var entry = new Array();

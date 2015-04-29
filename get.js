@@ -13,16 +13,49 @@ $(document).ready(function(){
     });
   }, 1000);
 
+  var user_storage = '';
+  var data = '';
+
   $(document).on('click', '#topics i', function () {
-    var user_storage = $(this).prev().children().text();
+
+    user_storage += $(this).prev().children().text();
+    user_storage += ",";
+
+    data += $(this).parent().html();
+    data += ",";
+
+    // var myObj = new Object();
+    // var user_storage = "";
+   //  var user_storage = new Array();
+   //  user_storage.push(current_storage);
+
+   //  console.log(user_storage);
+
+   //  var storageArray = new Array();
+
+   //  for( var i=0 ; i < user_storage.length ; i++ ) {
+   //    // if( user_storage[i].length > 0 ) {
+   //       storageArray.push( user_storage[i] );
+   //    // }
+   // }
+   // user_storage = user_storage + user_storage;
 
     console.log(user_storage);
 
-    var data = $(this).parent().html();
+    var datalist = {
+        sekusy: user_storage,
+        fav: data
+    }
 
-    console.log(data);
+    console.log("データを保存しました");
+
+    window.localStorage.setItem("setdata", JSON.stringify(datalist));
+
+    console.log(datalist);
 
 
+    //保存データを表示する
+    // display();
 
 //------------------------
     // var segmenter = new TinySegmenter();
@@ -63,6 +96,11 @@ $(document).ready(function(){
         },
         "slow", "easeInQuart"
     );
+    var d = JSON.parse(window.localStorage.getItem("setdata"));
+
+    console.log(d.sekusy);
+    console.log(d.fav);
+
   });
 
   $(document).on('click', '.close', function () {
